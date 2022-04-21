@@ -1462,7 +1462,7 @@
         </div>
       </section>
 
-     <!-- <section class="videoblock">
+     <section class="videoblock">
         <picture>
           <source srcset="img/videoblock_bg_mobile.png" media="(max-width: 768px)">
           <img src="img/videoblock_bg.jpg" alt="Rebalance" class="videoblock__bg">
@@ -1474,10 +1474,13 @@
                 <div class="videoblock__title">
                   ReBalance - Take Control of Your Health
                 </div>
-                <div class="videoblock__video plyr__video-embed js-player">
-                  <iframe src="https://www.youtube.com/embed/9ZizbjBN9ws" allowfullscreen allowtransparency allow="autoplay">
-                  </iframe>
+
+                <div class="videoblock__video">
+                  <video video class="plyr__video-embed js-player" playsinline controls data-poster="img/videoblock__video.png">
+                    <source src="video/video.mp4" type="video/mp4" />
+                  </video>
                 </div>
+
                 <div class="videoblock__text">
                   <p>
                     <strong>Stop feeling trapped</strong> in your body and start feeling like a happier more energized
@@ -1491,10 +1494,13 @@
                 <div class="videoblock__title">
                   What lifestyle causes Erectile Dysfunction (ED)?
                 </div>
-                <div class="videoblock__video plyr__video-embed js-player">
-                  <iframe src="https://www.youtube.com/embed/9ZizbjBN9ws" allowfullscreen allowtransparency allow="autoplay">
-                  </iframe>
+
+                <div class="videoblock__video">
+                  <video video class="plyr__video-embed js-player" playsinline controls data-poster="img/videoblock__video.png">
+                    <source src="video/video.mp4" type="video/mp4" />
+                  </video>
                 </div>
+
                 <div class="videoblock__text">
                   <p>
                     <strong>Dr. Arkady Lipnitsky</strong> talkes about erectile dysfunction, causes and reasons.
@@ -1507,7 +1513,7 @@
             <a href="#">Find your program</a>
           </div>
         </div>
-      </section>   -->
+      </section> 
 
       <section class="gallery">
         <div class="container">
@@ -1717,7 +1723,7 @@
         </div>
       </section>
 
-     <!-- <section class="comments">
+     <section class="comments">
         <img src="img/comments_bg.jpg" alt="comments" class="comments__bg">
         <div class="container">
           <div class="comments__title">
@@ -1736,10 +1742,11 @@
                       <img src="img/coments_item_img1.png" alt="photo">
                     </div>
                     <div class="comments__item-video">
-                      <div class=" plyr__video-embed js-player" data-poster="img/videoblock__video.png">
-                        <iframe src="https://www.youtube.com/embed/MWTmwzoFFJw" allowfullscreen allowtransparency allow="autoplay">
-                        </iframe>
-                      </div>
+
+                      <video video class="plyr__video-embed js-player" playsinline controls data-poster="img/videoblock__video.png">
+                        <source src="video/video.mp4" type="video/mp4" />
+                      </video>
+
                     </div>
                     <div class="comments__item-name">
                       <strong>Rene Surfman.</strong> Registered Nurse
@@ -1767,10 +1774,11 @@
                       <img src="img/coments_item_img1.png" alt="photo">
                     </div>
                     <div class="comments__item-video">
-                      <div class="comments__item-video plyr__video-embed js-player" data-poster="img/videoblock__video.png">
-                        <iframe src="https://www.youtube.com/embed/MWTmwzoFFJw" allowfullscreen allowtransparency allow="autoplay">
-                        </iframe>
-                      </div>
+
+                      <video video class="plyr__video-embed js-player" playsinline controls data-poster="img/videoblock__video.png">
+                        <source src="video/video.mp4" type="video/mp4" />
+                      </video>
+
                     </div>
                     <div class="comments__item-name">
                       <strong>Rene Surfman.</strong> Registered Nurse
@@ -1797,7 +1805,7 @@
           </div>
           
         </div>
-      </section> -->
+      </section> 
 
       <div class="messangersbox">
         <div class="messangersbox__wrapper">
@@ -2008,10 +2016,8 @@
   </div>
 
 
-
   <!-- Modal -->
-
-  <!-- <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
     aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
@@ -2020,16 +2026,15 @@
         </div>
         <div class="modal-body">
 
-          <div class="modal__video plyr__video-embed js-player">
 
-            <iframe src="https://www.youtube.com/embed/9ZizbjBN9ws" allowfullscreen allowtransparency allow="autoplay">
-            </iframe> 
-            
-          </div>
+          <video video class="modal__video plyr__video-embed js-player" playsinline controls data-poster="img/videoblock__video.png">
+            <source src="video/video.mp4" type="video/mp4" />
+          </video>
+
         </div>
       </div>
     </div>
-  </div> -->
+  </div>
 
   <script src="js/lib/jquery.js"></script>
   <script src="js/lib/slick.min.js"></script>
