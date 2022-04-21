@@ -1,0 +1,794 @@
+@import url('https://fonts.googleapis.com/css2?family=Port+Lligat+Sans&display=swap');
+
+.abmet-welcomesection {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 378px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .abmet-welcomesection__bg {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 100% 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    .abmet-welcomesection__logo {
+        position: relative;
+        z-index: 2;
+        max-width: 322px;
+    }
+}
+
+.pillarsofhealth {
+    padding: 100px 0 80px;
+
+    h1 {
+        display: block;
+        max-width: 705px;
+        margin: 0 auto 45px;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 150%;
+    }
+
+    .pillarsofhealth__descr {
+        max-width: 1010px;
+        margin: 0 auto 60px;
+
+        p {
+            font-weight: 300;
+            font-size: 20px;
+            line-height: 150%;
+            color: #545454;
+            margin-bottom: 25px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            b,
+            strong {
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+.pillarsofhealth-content {
+    max-width: 1283px;
+    margin: 0 auto;
+
+    .pillarsofhealth__group {
+        position: relative;
+
+        .row {
+            margin-left: -20px;
+            margin-right: -20px;
+
+            .col-lg-4 {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+        }
+    }
+}
+
+.pillarsofhealth-card {
+    box-shadow: 0px 4px 18px rgb(0 0 0 / 13%);
+    margin-bottom: 54px;
+
+    &:hover {
+        .pillarsofhealth-card__imgbox img {
+            transform: scale(1);
+        }
+
+        .pillarsofhealth-card__descrbox {
+            background: #fff;
+        }
+    }
+}
+
+.pillarsofhealth-card__imgbox {
+    position: relative;
+    overflow: hidden;
+    height: 223px;
+
+    img {
+        animation-timing-function: ease-in-out;
+        transition: 0.5s;
+        transform: scale(1.06);
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 50% 50%;
+    }
+
+    // &:hover {
+    //     img {
+    //         transform: scale(1);
+    //     }
+    // }
+}
+
+.pillarsofhealth-card__descrbox {
+    padding: 15px 20px;
+    height: 320px;
+    background: #F6F6F6;
+    transition: 0.5s;
+
+    .title {
+        text-align: center;
+        margin-bottom: 16px;
+        color: #545454;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 150%;
+        font-family: "El Messiri", sans-serif;
+    }
+
+    .descr {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 150%;
+        color: #545454;
+
+        display: -webkit-box;
+        -webkit-line-clamp: 8;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+}
+
+.pillarsofhealth__groupbg {
+    position: absolute;
+    right: -80px;
+    bottom: 170px;
+    z-index: -1;
+}
+
+.abmet-quote {
+    background: #F6F6F6;
+    padding: 54px 0;
+    text-align: center;
+
+    .quotebox {
+        max-width: 768px;
+        margin: 0 auto;
+    }
+
+    .abmet-quote__logo {
+        max-width: 111px;
+        margin-bottom: 43px;
+    }
+
+    .descr {
+        position: relative;
+
+        p {
+            margin-bottom: 20px;
+            font-weight: 400;
+            font-size: 27px;
+            line-height: 150%;
+            color: #545454;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        &::after {
+            content: '“';
+            display: inline-block;
+            position: absolute;
+            left: -20px;
+            top: -20px;
+            font-family: 'Port Lligat Sans', sans-serif;
+            font-weight: 400;
+            font-size: 48px;
+            line-height: 1;
+
+            background-image: -webkit-gradient(linear, left top, right top, color-stop(-7%, #8f7047), color-stop(50.07%, #dabd9a), color-stop(105%, #a58a63));
+            background-image: linear-gradient(90deg, #8f7047 -7%, #dabd9a 50.07%, #a58a63 105%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        &::before {
+            content: '“';
+            display: inline-block;
+            position: absolute;
+            right: -20px;
+            bottom: -20px;
+            font-family: 'Port Lligat Sans', sans-serif;
+            transform: rotate(-180deg);
+            font-weight: 400;
+            font-size: 48px;
+            line-height: 1;
+
+            background-image: -webkit-gradient(linear, left top, right top, color-stop(-7%, #8f7047), color-stop(50.07%, #dabd9a), color-stop(105%, #a58a63));
+            background-image: linear-gradient(90deg, #8f7047 -7%, #dabd9a 50.07%, #a58a63 105%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+}
+
+.aboutrebalance {
+    padding: 100px 0 65px;
+
+    .aboutrebalance__descr {
+        max-width: 1010px;
+        margin: 0 auto 65px;
+
+        h2 {
+            font-weight: 700;
+            font-size: 50px;
+            line-height: 150%;
+            text-transform: uppercase;
+            font-family: "El Messiri", sans-serif;
+            margin-bottom: 43px;
+
+            .tit {
+                color: #DABD9A;
+                display: inline-block;
+
+                &::first-letter {
+                    font-weight: 700;
+                    font-size: 76px;
+                    line-height: 150%;
+                }
+
+                .num {
+                    color: #C2C2C2;
+                    display: inline-block;
+                    position: relative;
+                    margin-left: 10px;
+
+                    &::after {
+                        content: '';
+                        display: inline-block;
+                        width: 121px;
+                        height: 78px;
+                        position: absolute;
+                        right: -19px;
+                        top: -9px;
+                        background: url('../img/new/elipse.svg') no-repeat center / 100% 100%;
+                    }
+                }
+            }
+        }
+
+        .description {
+            p {
+                margin-bottom: 25px;
+                font-weight: 300;
+                font-size: 20px;
+                line-height: 150%;
+                color: #545454;
+
+                b,
+                strong {
+                    font-weight: 600;
+                }
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    .aboutrebalance__list {
+        max-width: 1264px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .aboutrebalance__listbox {
+            width: 100%;
+            max-width: calc(33% - 33px);
+            background: linear-gradient(90deg, #8F7047 -7%, #DABD9A 50.07%, #A58A63 105%);
+            min-height: 115px;
+            margin-bottom: 35px;
+            padding: 15px 15px 15px 25px;
+            display: flex;
+            align-items: center;
+
+            .aboutrebalance__listbox-pic {
+                width: 100%;
+                max-width: 80px;
+                flex: 0 0 80px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .aboutrebalance__listbox-descr {
+                width: 100%;
+                max-width: calc(100% - 80px);
+                flex: 0 0 calc(100% - 80px);
+                padding-left: 20px;
+
+                p {
+                    margin: 0;
+                    color: #fff;
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 150%;
+                }
+            }
+        }
+    }
+
+}
+
+.infosection {
+    position: relative;
+    overflow: hidden;
+    padding: 100px 0;
+    text-align: center;
+
+    .infosection__bg {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 50% 50%;
+    }
+
+    .container {
+        position: relative;
+        z-index: 2;
+    }
+
+    .infosection_logo {
+        width: 98px;
+        margin-bottom: 15px;
+    }
+
+    h3 {
+        font-family: "El Messiri", sans-serif;
+        margin-bottom: 33px;
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 150%;
+        color: #fff;
+        text-transform: uppercase;
+    }
+
+    .descr {
+        p {
+            margin-bottom: 25px;
+            color: #fff;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 150%;
+            text-align: left;
+
+            b,
+            strong {
+                font-weight: 700;
+            }
+
+            i {
+                max-width: 747px;
+                display: block;
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .infosection__content {
+        max-width: 1010px;
+        margin: 0 auto;
+    }
+
+
+
+
+
+
+
+
+
+
+}
+
+.aboutrebalance .aboutrebalance__list .aboutrebalance__listbox .aboutrebalance__listbox-pic img {
+    max-width: 100%;
+}
+
+@media(max-width:1600.8px) {
+    .abmet-welcomesection {
+        height: 330px;
+    }
+
+    .abmet-welcomesection .abmet-welcomesection__logo {
+        max-width: 250px;
+    }
+
+    .pillarsofhealth__groupbg {
+        max-width: 400px;
+        right: 0;
+    }
+
+    .aboutrebalance .aboutrebalance__descr h2 .tit .num:after {
+        width: 105px;
+        height: 74px;
+    }
+
+    .pillarsofhealth {
+        padding: 70px 0 50px;
+    }
+
+    .aboutrebalance {
+        padding: 70px 0 50px;
+    }
+
+    .aboutrebalance .aboutrebalance__descr h2 .tit::first-letter {
+        font-size: 60px;
+    }
+
+
+
+
+
+
+
+
+    .infosection {
+        padding: 70px 0;
+    }
+
+    .pillarsofhealth h1,
+    .aboutrebalance .aboutrebalance__descr h2,
+    .infosection h3 {
+        font-size: 42px;
+        margin-bottom: 30px;
+    }
+
+    .pillarsofhealth-card__descrbox .title,
+    .abmet-quote .descr p {
+        font-size: 24px;
+    }
+
+    .pillarsofhealth .pillarsofhealth__descr p,
+    .aboutrebalance .aboutrebalance__descr .description p,
+    .aboutrebalance .aboutrebalance__list .aboutrebalance__listbox .aboutrebalance__listbox-descr p,
+    .infosection .descr p {
+        font-size: 18px;
+    }
+
+}
+
+@media(max-width:1399.8px) {
+    .pillarsofhealth-content .pillarsofhealth__group .row {
+        margin-left: -15px;
+        margin-right: -15px;
+
+        .col-lg-4 {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    }
+
+    .pillarsofhealth-card__descrbox .title {
+        margin-bottom: 10px;
+    }
+
+    .pillarsofhealth__groupbg {
+        max-width: 31%;
+    }
+
+    .abmet-quote .descr:after {
+        left: 0;
+        top: -10px;
+    }
+
+    .abmet-quote .descr:before {
+        right: 0;
+        bottom: -10px;
+    }
+
+
+
+
+
+
+
+
+
+    .abmet-quote .descr p {
+        font-size: 20px;
+    }
+
+
+
+}
+
+@media(max-width:1199.8px) {
+    .pillarsofhealth-card__imgbox {
+        position: relative;
+        overflow: hidden;
+        height: 170px;
+    }
+
+    .pillarsofhealth-card__descrbox {
+        height: 280px;
+    }
+
+    .pillarsofhealth-card {
+        margin-bottom: 30px;
+    }
+
+    .aboutrebalance .aboutrebalance__list .aboutrebalance__listbox {
+        max-width: calc(33% - 10px);
+        margin-bottom: 15px;
+        padding: 10px 10px 10px 15px;
+    }
+
+    .aboutrebalance .aboutrebalance__list .aboutrebalance__listbox .aboutrebalance__listbox-pic {
+        max-width: 60px;
+        flex: 0 0 60px;
+    }
+
+    .aboutrebalance .aboutrebalance__list .aboutrebalance__listbox .aboutrebalance__listbox-descr {
+        max-width: calc(100% - 60px);
+        flex: 0 0 calc(100% - 60px);
+        padding-left: 15px;
+    }
+
+
+
+
+
+
+
+    .pillarsofhealth-card__descrbox .title {
+        font-size: 22px;
+    }
+
+    .pillarsofhealth-card__descrbox .descr {
+        font-size: 16px;
+    }
+
+}
+
+@media(max-width:991.8px) {
+    .pillarsofhealth {
+        padding: 60px 0 40px;
+    }
+
+    .pillarsofhealth .pillarsofhealth__descr {
+        margin-bottom: 40px;
+    }
+
+    .pillarsofhealth__groupbg {
+        max-width: 46%;
+    }
+
+    .abmet-quote {
+        padding: 40px 0;
+    }
+
+    .abmet-quote .abmet-quote__logo {
+        margin-bottom: 30px;
+    }
+
+    .abmet-quote .quotebox {
+        max-width: 540px;
+    }
+
+    .abmet-quote .descr:before {
+        right: -20px;
+        bottom: -20px;
+    }
+
+    .abmet-quote .descr:after {
+        left: -20px;
+        top: -20px;
+    }
+
+    .abmet-quote .abmet-quote__logo {
+        max-width: 100px;
+    }
+
+    .aboutrebalance .aboutrebalance__descr h2 .tit .num:after {
+        width: 85px;
+        height: 57px;
+        right: -14px;
+    }
+
+    .aboutrebalance .aboutrebalance__descr h2 .tit::first-letter {
+        font-size: 44px;
+    }
+
+    .aboutrebalance .aboutrebalance__descr {
+        margin-bottom: 40px;
+    }
+
+    .aboutrebalance .aboutrebalance__list .aboutrebalance__listbox {
+        max-width: calc(50% - 10px);
+    }
+
+    .aboutrebalance {
+        padding-top: 60px;
+    }
+
+
+
+
+
+
+
+    .infosection {
+        padding: 60px 0;
+    }
+
+    .pillarsofhealth .pillarsofhealth__descr p,
+    .aboutrebalance .aboutrebalance__descr .description p {
+        margin-bottom: 20px;
+    }
+
+    .aboutrebalance .aboutrebalance__descr h2 {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+
+    .infosection h3,
+    .pillarsofhealth h1 {
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+
+
+}
+
+@media(max-width:767.8px) {
+    .pillarsofhealth-card__descrbox {
+        height: auto;
+    }
+
+    .pillarsofhealth-card__imgbox {
+        height: 240px;
+    }
+
+    .abmet-quote .quotebox {
+        max-width: 440px;
+    }
+
+
+
+
+
+
+
+
+
+}
+
+@media(max-width:575.8px) {
+
+    .abmet-welcomesection {
+        height: 240px;
+    }
+
+    .pillarsofhealth {
+        padding: 50px 0 30px;
+    }
+
+    .pillarsofhealth-card__imgbox {
+        height: auto;
+    }
+
+    .pillarsofhealth-card__descrbox {
+        padding-bottom: 20px;
+    }
+
+    .abmet-quote .abmet-quote__logo {
+        max-width: 80px;
+        margin-bottom: 15px;
+    }
+
+    .abmet-quote .quotebox {
+        max-width: 300px;
+    }
+
+    .aboutrebalance {
+        padding-top: 50px;
+    }
+
+    .aboutrebalance .aboutrebalance__descr h2 .tit .num:after {
+        width: 65px;
+        height: 48px;
+        right: -12px;
+    }
+
+    .aboutrebalance .aboutrebalance__list .aboutrebalance__listbox {
+        max-width: 100%;
+    }
+
+    .aboutrebalance .aboutrebalance__list .aboutrebalance__listbox .aboutrebalance__listbox-pic {
+        max-width: 70px;
+        flex: 0 0 70px;
+    }
+
+    .aboutrebalance .aboutrebalance__list .aboutrebalance__listbox .aboutrebalance__listbox-descr {
+        max-width: calc(100% - 70px);
+        flex: 0 0 calc(100% - 70px);
+    }
+
+    .infosection {
+        padding: 50px 0;
+    }
+
+    .aboutrebalance .aboutrebalance__list .aboutrebalance__listbox {
+        min-height: 95px;
+    }
+
+    .abmet-welcomesection .abmet-welcomesection__logo {
+        max-width: 200px;
+    }
+
+    .abmet-welcomesection {
+        height: 210px;
+    }
+
+
+
+
+
+
+    .pillarsofhealth-card__descrbox .title {
+        font-size: 20px;
+    }
+
+    .aboutrebalance .aboutrebalance__list .aboutrebalance__listbox .aboutrebalance__listbox-descr p {
+        font-size: 18px;
+    }
+
+    .aboutrebalance .aboutrebalance__descr .description p,
+
+    .infosection .descr p,
+    .pillarsofhealth .pillarsofhealth__descr p,
+    .abmet-quote .descr p {
+        font-size: 16px;
+    }
+
+    .infosection h3,
+    .pillarsofhealth h1,
+    .aboutrebalance .aboutrebalance__descr h2 {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+}
+
+@media(max-width:360.8px) {
+
+    .abmet-quote .descr:before,
+    .abmet-quote .descr:after {
+        display: none;
+    }
+}
+
+
+
+// font-family: "El Messiri",sans-serif;
+// font-family: 'Port Lligat Sans', sans-serif;

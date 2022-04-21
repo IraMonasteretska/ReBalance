@@ -1,0 +1,58 @@
+.greysection {
+    padding: 54px 0;
+    background: #F6F6F6;
+    position: relative;
+
+    p {
+        position: relative;
+        z-index: 2;
+        font-style: italic;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 150%;
+        color: #545454;
+        &+ p{
+            margin-top: 20px;
+        }
+    }
+}
+.greysection__wrapper{
+    max-width: 1010px;
+    margin: 0 auto;
+}
+.greysection__frame{
+    width: 183px;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.ipl-gallery{
+    max-height: 491px;
+    margin-bottom: 40px;
+    img{
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+    }
+}
+.centerlist{
+    margin-bottom: 40px!important;
+}
+.articlesect .articlesect__contbox ul.biglist {
+    max-width: 927px!important;
+}
+
+@media(max-width: 768px){
+    .greysection p {
+        font-size: 18px;
+        line-height: 140%;
+    }
+    .greysection {
+        padding: 40px 0;
+        margin: -30px 0 -10px;
+    }
+}

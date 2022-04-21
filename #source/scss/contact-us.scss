@@ -1,0 +1,146 @@
+.contactus {
+    padding: 100px 0 120px;
+}
+
+.contactus__title h1{
+    margin: 0 auto 40px;
+    font-family: 'El Messiri';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 150%;
+    display: table;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #8F7047 -7%, #DABD9A 50.07%, #A58A63 105%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.contactus__item {
+    padding-left: 45px;
+    position: relative;
+    margin-bottom: 47px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    p {
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 27px;
+        margin-bottom: 15px;
+        text-transform: uppercase;
+        color: #545454;
+    }
+
+    a {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+        color: #545454;
+        display: block;
+        transition: .3s;
+        &.contactus__item-social{
+            display: inline-block;
+            transition: .3s;
+            width: 47px;
+            img{
+                width: 100%;
+                background-size: cover;
+            }
+            &:hover{
+                filter: brightness(80%);
+            }
+            & + .contactus__item-social{
+                margin-left: 32px;
+            }
+        }
+        &:hover{
+            color: #DABD9A;
+        }
+    }
+}
+.contactus__item-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 26px;
+    height: 26px;
+    background-size: cover;
+}
+
+.contactus__map{
+    width: 100%;
+    height: 100%;
+}
+
+
+//  ---------- RESPONSIVE ------------- //
+
+@media(max-width:1600px) {
+    .contactus__title h1{
+        font-size: 42px;
+        margin-bottom: 30px;
+    }
+    .contactus__map {
+        padding-left: 60px;
+    }
+}
+
+@media(max-width:991.8px) {
+    .contactus__title h1{
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+    .contactus__map{
+        margin-top: 40px;
+        height: 500px;
+        padding-left: 0;
+    }
+    .contactus {
+        padding: 50px 0 80px;
+    }
+    .contactus__item {
+        margin-bottom: 30px;
+    }
+}
+@media(max-width:768px) {
+    .contactus__title h1{
+        font-size: 24px;
+    }
+    .contactus__item {
+        a {
+            font-size: 18px;
+            line-height: 130%;
+        }
+    }
+    .contactus__item {
+        padding-left: 35px;
+    }
+    .contactus__item-img {
+        top: 4px;
+        width: 22px;
+        height: 22px;
+    }
+    .contactus__item a.contactus__item-social {
+        width: 40px;
+    }
+    .contactus__item a.contactus__item-social+.contactus__item-social {
+        margin-left: 0px;
+    }
+    .contactus__wrapper{
+        display: flex;
+        padding-right: 35px;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    .contactus__map {
+        height: 370px;
+    }
+    .contactus {
+        padding: 35px 0 60px;
+    }
+}

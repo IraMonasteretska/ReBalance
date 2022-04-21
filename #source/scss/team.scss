@@ -1,0 +1,343 @@
+.articlesect .articlesect__content.team {
+    max-width: 1270px;
+}
+
+.teambox {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 150px;
+
+    .teambox__text {
+        width: 100%;
+        max-width: 55%;
+        flex: 0 0 55%;
+        padding-right: 50px;
+
+        .title {
+            margin-bottom: 40px;
+            font-weight: 700;
+            font-size: 50px;
+            line-height: 78px;
+            text-align: center;
+            text-transform: uppercase;
+            font-family: "El Messiri", sans-serif;
+            background-image: -webkit-gradient(linear, left top, right top, color-stop(-7%, #8f7047), color-stop(50.07%, #dabd9a), color-stop(105%, #a58a63));
+            background-image: linear-gradient(90deg, #8f7047 -7%, #dabd9a 50.07%, #a58a63 105%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .descr {
+            p.proff {
+                color: #A88D65;
+                font-weight: 500;
+                margin: 0;
+            }
+
+            p {
+                margin-top: 0;
+            }
+        }
+    }
+
+    .teambox__img {
+        width: 100%;
+        max-width: 45%;
+        flex: 0 0 45%;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .readmore {
+        font-weight: 700;
+        font-size: 23px;
+        line-height: 150%;
+        font-family: 'Manrope';
+        text-transform: uppercase;
+        margin-top: 25px;
+        display: inline-block;
+        background-image: -webkit-gradient(linear, left top, right top, color-stop(-7%, #8f7047), color-stop(50.07%, #dabd9a), color-stop(105%, #a58a63));
+        background-image: linear-gradient(90deg, #8f7047 -7%, #dabd9a 50.07%, #a58a63 105%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        position: relative;
+
+        &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            bottom: 2px;
+            height: 2px;
+            width: 100%;
+            background: #DABD9A;
+            transition: 0.3s;
+        }
+
+        &:hover {
+            &::after {
+                width: 0;
+            }
+        }
+    }
+}
+
+.teamboxes .teambox:nth-child(even) {
+    flex-direction: row-reverse;
+
+    .teambox__text {
+        padding-right: 0;
+        padding-left: 50px;
+    }
+}
+
+.rebalanssexsect {
+    max-width: 1270px;
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
+
+.rebalanssex__box {
+    height: 300px;
+
+    &.man {
+        background: url('../img/new/sec2-rught-img.jpg') no-repeat top right / cover;
+    }
+
+    &.woman {
+        background: url('../img/new/sec2-left-img.jpg') no-repeat top left / cover;
+    }
+}
+
+.rebalanssex__box {
+    position: relative;
+}
+
+.continside {
+    position: absolute;
+    width: 250px;
+
+    p {
+        margin-bottom: 20px;
+        font-weight: 700;
+        font-size: 38px;
+        line-height: 140%;
+    }
+
+    a {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 150%;
+        font-family: "Manrope";
+        text-transform: uppercase;
+        display: inline-block;
+        background-image: -webkit-gradient(linear, left top, right top, color-stop(-7%, #8f7047), color-stop(50.07%, #dabd9a), color-stop(105%, #a58a63));
+        background-image: linear-gradient(90deg, #8f7047 -7%, #dabd9a 50.07%, #a58a63 105%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        position: relative;
+
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            bottom: 2px;
+            height: 2px;
+            width: 100%;
+            background: #DABD9A;
+            -webkit-transition: 0.3s;
+            transition: 0.3s;
+        }
+
+        &:hover {
+            &::after {
+                width: 0;
+            }
+        }
+    }
+}
+
+.rebalanssex__box.woman {
+    .continside {
+        right: 0;
+        top: 0;
+        padding-top: 30px;
+        padding-right: 10px;
+    }
+}
+
+.rebalanssex__box.man {
+    .continside {
+        left: 0;
+        top: 0;
+        padding-top: 30px;
+        padding-left: 20px;
+
+        p {
+            color: #fff;
+        }
+    }
+}
+
+
+
+
+
+@media(max-width:1600.8px) {
+    .teambox .teambox__text .title {
+        margin-bottom: 20px;
+        font-size: 42px;
+        line-height: 58px;
+    }
+
+    .articlesect .articlesect__content.team {
+        max-width: 1010px;
+    }
+
+    .teambox {
+        margin-top: 100px;
+    }
+
+    .teambox .readmore {
+        font-size: 18px;
+        margin-top: 10px;
+    }
+}
+
+@media(max-width:1199.8px) {
+    .teambox .teambox__text .title {
+        font-size: 34px;
+        line-height: 54px;
+    }
+
+    .rebalanssex__box.woman {
+        background: url(../img/new/sec2-left-img.jpg) no-repeat top left -100px /cover;
+    }
+
+    .continside p {
+        font-size: 32px;
+    }
+
+    .continside {
+        position: absolute;
+        width: 210px;
+    }
+
+    .rebalanssex__box.man {
+        background: url(../img/new/sec2-rught-img.jpg) no-repeat top right -100px/cover;
+    }
+
+    .rebalanssex__box {
+        height: 260px;
+    }
+
+    .rebalanssexsect {
+        padding-bottom: 150px;
+    }
+
+
+}
+
+@media(max-width:991.8px) {
+
+    .teambox .teambox__text,
+    .teambox .teambox__img {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .teambox .teambox__text {
+        padding: 0 !important;
+        margin-bottom: 20px;
+    }
+
+    .teambox {
+        margin-top: 50px;
+    }
+
+    .rebalanssex__box {
+        height: 220px;
+    }
+
+    .rebalanssexsect {
+        padding-bottom: 70px;
+    }
+
+
+
+
+}
+
+@media(max-width:767.8px) {
+    .rebalanssex__box.woman {
+        background: url(../img/new/sec2-left-img.jpg) no-repeat top left /cover;
+        margin-bottom: 20px;
+    }
+
+    .rebalanssex__box.man {
+        background: url(../img/new/sec2-rught-img.jpg) no-repeat top right /cover;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+@media(max-width:575.8px) {
+    .teambox .teambox__text .title {
+        font-size: 24px;
+        margin-bottom: 15px;
+        line-height: normal;
+    }
+
+
+
+    .continside p {
+        font-size: 24px;
+    }
+
+    .continside a {
+        font-size: 16px;
+    }
+
+    .continside {
+        width: 160px;
+    }
+
+    .rebalanssex__box {
+        height: 180px;
+    }
+
+
+
+
+
+}
+
+@media(max-width:375.8px) {
+    .rebalanssex__box.woman {
+        background: url(../img/new/sec2-left-img.jpg) no-repeat top left -30px /cover;
+        margin-bottom: 20px;
+    }
+
+    .rebalanssex__box.man {
+        background: url(../img/new/sec2-rught-img.jpg) no-repeat top right -30px /cover;
+    }
+}
