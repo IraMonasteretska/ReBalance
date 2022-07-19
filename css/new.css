@@ -1,0 +1,407 @@
+.ebooksect {
+    padding: 52px 0 21px 0;
+    background: url('../img/ebook/ebookbg1.png'), url('../img/ebook/ebookbg2.png');
+    background-repeat: no-repeat, no-repeat;
+    background-position: left top, right top;
+}
+
+.ebookform {
+    padding: 55px 0 269px 55px;
+    max-width: 720px;
+    position: relative;
+    z-index: 2;
+}
+
+.ebookform h1 {
+    font-family: "El Messiri", sans-serif;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 85px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #8F7047 -7%, #DABD9A 50.07%, #A58A63 105%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 10px;
+}
+
+.ebookform__subtitle {
+    text-align: center;
+    color: #545454;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 60px;
+}
+
+.ebookform .qform input,
+.ebookform .qform textarea {
+    color: #545454;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 60px;
+}
+
+.ebookform .qform input::placeholder,
+.ebookform .qform textarea::placeholder {
+    color: #545454;
+}
+
+.ebookform .qform .qform__submit {
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+.ebookform .qform .qform__submit:hover {
+    color: #DABD9A;
+    border: 1px solid #DABD9A;
+}
+
+.ebookform .qform .qform__submit svg {
+    margin-right: 20px;
+    margin-left: 0;
+}
+
+.ebookpic {
+    position: relative;
+}
+
+.ebookpic img {
+    position: absolute;
+    top: 0;
+    left: -80px;
+    z-index: 1;
+}
+
+img.tablet {
+    display: none;
+}
+
+.book__download {
+    margin-top: 180px;
+    padding: 62px 0;
+    background: #AC9C87;
+}
+
+.book__download-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.book__download-left {
+    width: 100%;
+    max-width: 616px;
+    flex: 0 0 616px;
+}
+
+.book__download-left .title {
+    font-family: "El Messiri", sans-serif;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 150%;
+    color: #fff;
+    margin-bottom: 12px;
+}
+
+.book__download-left .descr {
+    margin-bottom: 25px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    color: #fff;
+    font-family: "Poppins", sans-serif
+}
+
+.book__download-left .bookdllink {
+    padding: 15px 41px;
+    background: linear-gradient(90deg, #8F7047 -7%, #DABD9A 50.07%, #A58A63 105%);
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 150%;
+    font-family: 'Manrope';
+}
+
+.book__download-right {
+    width: 100%;
+    max-width: calc(100% - 616px);
+    flex: 0 0 calc(100% - 616px);
+    position: relative;
+}
+
+.book__download-right .pocwrapper {
+    position: absolute;
+    bottom: -10px;
+    left: 130px;
+}
+
+.book__download-right .pocwrapper img.image {
+    position: absolute;
+    z-index: 2;
+    bottom: -65px;
+    transform: translateX(35%);
+}
+
+.book__download-right .pocwrapper img.text {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+}
+
+
+
+
+
+
+
+
+
+@media(max-width:1600.8px) {
+    .ebookform {
+        max-width: 600px;
+    }
+
+    .ebookform h1 {
+        font-size: 46px;
+        line-height: 65px;
+    }
+
+    .ebookform__subtitle {
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 40px;
+    }
+
+    .ebookpic img {
+        width: 800px;
+    }
+
+    .book__download-left .title {
+        font-size: 42px;
+    }
+
+    .book__download-left .descr {
+        font-size: 16px;
+    }
+
+    .book__download-left {
+        width: 100%;
+        max-width: 500px;
+        flex: 0 0 500px;
+    }
+
+    .book__download-right {
+        max-width: calc(100% - 500px);
+        flex: 0 0 calc(100% - 500px);
+    }
+
+    .book__download-right .pocwrapper img.image {
+        width: 300px;
+    }
+
+    .book__download-right .pocwrapper img.text {
+        height: 200px;
+    }
+
+    .book__download {
+        padding: 50px 0;
+    }
+
+    .book__download-right .pocwrapper img.image {
+        bottom: -45px;
+    }
+
+}
+
+@media(max-width:1399.8px) {
+    .ebookform {
+        padding-bottom: 200px;
+    }
+}
+
+@media(max-width:1199.8px) {
+    .ebookpic img {
+        width: 700px;
+    }
+
+    .ebookform h1 {
+        font-size: 36px;
+        line-height: 55px;
+    }
+
+    .ebookform {
+        padding-top: 20px;
+        padding-bottom: 120px;
+    }
+
+    .book__download-right .pocwrapper {
+        left: 70px;
+    }
+
+    .book__download-right .pocwrapper img.text {
+        height: 160px;
+    }
+
+    .book__download-right .pocwrapper img.image {
+        width: 250px;
+    }
+
+    .book__download {
+        padding: 40px 0;
+    }
+
+}
+
+@media(max-width:991.8px) {
+    .ebookpic img {
+        position: relative;
+    }
+
+    .ebookpic img.tablet {
+        display: block;
+        margin: 0 auto;
+        max-width: 500px;
+        width: 100%;
+        left: initial;
+    }
+
+    .ebookpic img.desktop {
+        display: none;
+    }
+
+    .ebookform {
+        padding: 40px 0 70px 0;
+        margin: 0 auto;
+    }
+
+    .ebooksect {
+        background-size: 400px auto, 400px auto;
+    }
+
+    .book__download-right .pocwrapper {
+        position: relative;
+        width: 300px;
+        height: 300px;
+        left: initial;
+        margin: 0 auto;
+    }
+
+    .book__download-right {
+        order: 1;
+        max-width: 100%;
+        flex: 0 0 100%;
+        margin-bottom: 20px;
+    }
+
+    .book__download-left {
+        order: 2;
+        max-width: 100%;
+        flex: 0 0 100%;
+        text-align: center;
+    }
+
+    .book__download-right .pocwrapper img.image {
+        width: 100%;
+        bottom: 0;
+        transform: none;
+    }
+
+    .book__download-right .pocwrapper img.text {
+        height: 210px;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 40px;
+    }
+
+    .book__download {
+        margin-top: 120px;
+    }
+
+    .book__download-left .bookdllink {
+        display: inline-block;
+    }
+
+}
+
+@media(max-width:575.8px) {
+    .ebookpic img.tablet {
+        max-width: 300px;
+    }
+
+    .ebooksect {
+        padding: 30px 0 20px;
+    }
+
+    .ebookform h1 {
+        font-size: 28px;
+        line-height: 35px;
+    }
+
+    .ebookform__subtitle {
+        font-size: 16px;
+        line-height: 26px;
+        margin-bottom: 20px;
+        font-weight: 400;
+    }
+
+    .ebookform .qform input,
+    .ebookform .qform textarea {
+        margin-bottom: 30px;
+    }
+
+    .ebookform .qform .qform__submit {
+        max-width: 300px;
+    }
+
+    .ebookform {
+        padding-bottom: 40px;
+    }
+
+    .ebooksect {
+        background-size: 300px auto, 300px auto;
+    }
+
+    .book__download-right .pocwrapper img.image {
+        width: 240px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+
+    .book__download-right .pocwrapper img.text {
+        height: auto;
+        width: 80%;
+    }
+    .book__download-right .pocwrapper {
+        width: 100%;
+        text-align: center;
+    }
+
+    .book__download {
+        padding-top: 0;
+    }
+
+    .book__download-right .pocwrapper img.image {
+        width: 200px;
+    }
+
+    .book__download-right .pocwrapper {
+        height: 260px;
+    }
+
+    .book__download-left .title {
+        font-size: 30px;
+    }
+
+    .book__download-left .descr {
+        font-weight: 400;
+    }
+
+    .book__download {
+        margin-top: 50px;
+    }
+
+}
